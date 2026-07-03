@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #FAF3E0,
+        #F8EDE3,
+        #FEC89A,
+        #FFD6A5
+    );
+
+    overflow:hidden;
+}
+
+/* SIGNUP CARD */
+
+.signup{
+    width:380px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(12px);
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    animation:float 3s ease-in-out infinite;
+}
+
+/* HEADING */
+
+.signup h1{
+    text-align:center;
+    color:#3E2723;
+
+    margin-bottom:25px;
+}
+
+/* LABELS */
+
+label{
+    display:block;
+
+    color:#4A3F35;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+}
+
+/* INPUT FIELDS */
+
+input{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+    border-radius:8px;
+
+    outline:none;
+
+    background:rgba(255,255,255,0.75);
+
+    margin-bottom:15px;
+}
+
+input:focus{
+    box-shadow:0 0 8px rgba(197,110,51,0.4);
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+    border-radius:50px;
+
+    background:#C56E33;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* LOGIN SECTION */
+
+h3{
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#5D4037;
+
+    font-size:15px;
+}
+
+a{
+    display:block;
+
+    text-align:center;
+
+    margin-top:8px;
+
+    text-decoration:none;
+
+    color:#C56E33;
+
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* AIRPLANE */
+
+body::before{
+    content:"✈";
+    position:absolute;
+
+    font-size:60px;
+
+    top:25%;
+    left:-100px;
+
+    animation:fly 12s linear infinite;
+}
+
+/* CLOUD */
+
+body::after{
+    content:"☁";
+    position:absolute;
+
+    font-size:90px;
+
+    top:15%;
+    right:10%;
+
+    opacity:0.3;
+
+    animation:cloud 6s ease-in-out infinite alternate;
+}
+
+/* ANIMATIONS */
+
+@keyframes fly{
+    0%{
+        left:-100px;
+        top:30%;
+    }
+
+    25%{
+        top:20%;
+    }
+
+    50%{
+        top:35%;
+    }
+
+    75%{
+        top:15%;
+    }
+
+    100%{
+        left:110%;
+        top:25%;
+    }
+}
+
+@keyframes cloud{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(40px);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}

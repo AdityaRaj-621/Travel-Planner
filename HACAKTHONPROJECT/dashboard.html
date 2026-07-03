@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SmartTask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SmartTask</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="task.html">Add Task</a></li>
+            <li><a href="planner.html">AI Planner</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h1>Dashboard</h1>
+
+            <a href="task.html">
+                <button class="btn">
+                    + Add New Task
+                </button>
+            </a>
+
+        </div>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+        </div>
+
+        <div class="task-section">
+
+            <h2>Your Tasks</h2>
+
+            <div id="taskList">
+
+                <!-- Tasks will come from JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

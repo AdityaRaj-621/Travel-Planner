@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Planner | SmartTask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SmartTask</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="task.html">Add Task</a></li>
+            <li><a href="planner.html">AI Planner</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="planner-page">
+
+        <div class="planner-container">
+
+            <h1>AI Schedule Planner</h1>
+
+            <p class="subtitle">
+                Generate a smart schedule based on your tasks.
+            </p>
+
+            <div class="planner-card">
+
+                <h3>Your Daily Planner</h3>
+
+                <p>
+                    Click the button below to generate a schedule.
+                </p>
+
+                <button
+                    id="generateBtn"
+                    class="btn"
+                >
+                    Generate Schedule
+                </button>
+
+            </div>
+
+            <div
+                id="scheduleOutput"
+                class="schedule-output"
+            >
+
+                <h3>Today's Schedule</h3>
+
+                <p>
+                    Your generated schedule will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

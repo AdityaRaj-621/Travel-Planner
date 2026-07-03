@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task | SmartTask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SmartTask</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="task.html">Add Task</a></li>
+            <li><a href="planner.html">AI Planner</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li> 
+        </ul>
+    </nav>
+
+    <section class="task-page">
+
+        <div class="form-card">
+
+            <h1>Add New Task</h1>
+
+            <p class="subtitle">
+                Create and organize your tasks efficiently.
+            </p>
+
+            <form id="taskForm">
+
+                <div class="input-group">
+
+                    <label for="taskName">
+                        Task Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskName"
+                        placeholder="Enter task name"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="taskDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="taskDescription"
+                        rows="5"
+                        placeholder="Enter task description"
+                    ></textarea>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="taskDeadline">
+                        Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="taskDeadline"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="taskPriority">
+                        Priority
+                    </label>
+
+                    <select id="taskPriority">
+
+                        <option value="High">
+                            High Priority
+                        </option>
+
+                        <option value="Medium">
+                            Medium Priority
+                        </option>
+
+                        <option value="Low">
+                            Low Priority
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Add Task
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
